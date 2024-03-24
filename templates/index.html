@@ -1,0 +1,24 @@
+<!-- index.html (Frontend) -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Upload</title>
+    <!-- <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />  
+    <script defer src="https://pyscript.net/alpha/pyscript.js"></script>  -->
+    <link rel="stylesheet" href="https://pyscript.net/releases/2024.1.1/core.css" />
+    <script type="module" src="https://pyscript.net/releases/2024.1.1/core.js"></script>
+</head>
+<body style="background-color:black;">
+    <a href="/" style="text-decoration: none;"><h2 align="center" style="color:gold;">Face Recognition Based Attendance System</h2></a>
+    <h3 align="center" style="color:gold;">Upload a File</h3>
+    <div style="text-align: center; color:powderblue; padding-top: 30px;">
+        <form method="POST" enctype="multipart/form-data" action="/upload">
+            <input type="file" name="file">
+            <input type="submit" value="Upload File">
+        </form>
+    </div>
+</body>
+</html>

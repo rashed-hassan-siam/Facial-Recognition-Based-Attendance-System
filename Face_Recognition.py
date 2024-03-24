@@ -150,7 +150,8 @@ if reco_type == 1:
 
 
 
-        cv2.imshow('Colored Frame', frame)
+        # cv2.imshow('Colored Frame', frame)
+        cv2.imwrite(dir+ "output.jpg", frame)
         if cv2.waitKey(20) & 0xFF == ord('q'):
             break
 
@@ -197,7 +198,8 @@ if reco_type == 2:
 
 
     frame = cv2.resize(frame, (1080, 568))
-    cv2.imshow('Colored Frame', frame)
-    cv2.waitKey()
+    # cv2.imshow('Colored Frame', frame)
+    # cv2.waitKey()
+    cv2.imwrite(dir+ "output.jpg", frame)
 
 
